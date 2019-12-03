@@ -8,23 +8,70 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h1,
+h1, .h1 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+
+h2, .h2 {
+  font-size: 3rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-}
 
 p {
-  font-size: 2rem;
-  font-weight: 500;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 span {
   line-height: -10px;
+}
+
+.hobbies {
+
+}
+
+.quicksand {
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+  /* font-weight: 100; */
 }
 
 .life {
@@ -53,39 +100,43 @@ span {
   font-size: 4rem;
 }
 
-.colour-red {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+.font-red {
+  color: #CA2542;
+}
+
+.red {
   background-color: #CA2542;
-  font-size: 1.25rem;
-  font-weight: 300;
 }
 
-.colour-dark-blue {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+.font-dark-blue {
+  color: #276478;
+}
+
+.dark-blue {
   background-color: #276478;
-  font-size: 1.25rem;
-  font-weight: 300;
 }
 
-.colour-light-blue {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+.font-light-blue {
+  color: #849FAD;
+}
+
+.light-blue {
   background-color: #849FAD;
-  font-size: 1.25rem;
-  font-weight: 300;
 }
 
-.colour-turq {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+.font-turq {
+  color: #AECBC9;
+}
+
+.turq {
   background-color: #AECBC9;
-  font-size: 1.25rem;
-  font-weight: 300;
 }
 
-.colour-grey {
+.font-grey {
+  color: #57575F;
+}
+
+.grey {
   background-color: #57575F;
 }
 
@@ -96,12 +147,16 @@ span {
   font-weight: 300;
 }
 
-.white-font {
+.font-white {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   font-weight: 300;
-  color: #ffffff
+  color: #ffffff;
+}
+
+.white {
+  color: #ffffff;
 }
 
 .chart-size {
