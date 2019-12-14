@@ -53,25 +53,27 @@ h3,
 h4,
 h5,
 
-p {
+.p, p {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 1.25rem;
-  font-weight: 300;
+}
+
+.bold {
+  font-weight: 400;
 }
 
 span {
   line-height: -10px;
 }
 
-.hobbies {
 
-}
-
-.quicksand {
-  font-family: 'Quicksand';
-  font-size: 1.2rem;
-  /* font-weight: 100; */
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  color: #57575F;
 }
 
 .life {
@@ -80,6 +82,50 @@ span {
 
 .cheatsheets {
   font-family: 'Bad Script', cursive;
+}
+
+.rounded-img {
+  border-radius: 50% !important;
+}
+
+.brand {
+  font-family: 'Open Sans', sans-serif;
+  color: #57575F;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+}
+
+.circle-large {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  line-height: 5px;
+  color: white;
+}
+
+.pad-b {
+  padding-bottom:10px;
+}
+
+.pad-r {
+  padding-right:10px;
+}
+
+.extra-padding {
+  padding-top:30px;
+}
+
+.line-h {
+  line-height: 10px;
+}
+
+.center-row {
+  margin: auto;
 }
 
 .writing-icon {
@@ -97,7 +143,7 @@ span {
 
 .know-yourself {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .font-red {
@@ -132,7 +178,7 @@ span {
   background-color: #AECBC9;
 }
 
-.font-grey {
+.font-grey font-grey {
   color: #57575F;
 }
 
