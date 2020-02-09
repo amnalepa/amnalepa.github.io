@@ -59,14 +59,18 @@ h5,
   font-size: 1.25rem;
 }
 
-.bold {
-  font-weight: 400;
+.newsheet {
+  font-weight: 300;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  /* text-decoration: underline; */
 }
+
 
 span {
   line-height: -10px;
 }
-
 
 .navbar-brand {
   transform: translateX(-50%);
@@ -88,9 +92,21 @@ span {
   border-radius: 50% !important;
 }
 
+.rounded-img-20 {
+  border-radius: 20% !important;
+}
+
+.large-white-font {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
 .brand {
   font-family: 'Open Sans', sans-serif;
   color: #57575F;
+  font-style: italic;
 }
 
 .circle {
@@ -101,8 +117,8 @@ span {
 }
 
 .circle-large {
-  height: 140px;
-  width: 140px;
+  height: 155px;
+  width: 155px;
   border-radius: 50%;
   line-height: 5px;
   color: white;
@@ -116,8 +132,12 @@ span {
   padding-right:10px;
 }
 
-.extra-padding {
+.padding30 {
   padding-top:30px;
+}
+
+.padding20 {
+  padding-top:20px;
 }
 
 .line-h {
@@ -207,6 +227,10 @@ span {
 
 .chart-size {
   font-size: 100px;
+}
+
+a:hover {
+  color: grey;
 }
 
 

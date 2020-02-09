@@ -3,7 +3,7 @@
 
 <head>
   <script data-ad-client="ca-pub-6469626425988510" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -29,47 +29,37 @@
 
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
+  <link href="css/pie.css" rel="stylesheet">
 
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158093594-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158093594-1');
+  </script>
 </head>
 
 <body>
 
-  <!--navbar -->
-  <nav class="navbar navbar-light turq sticky-top">
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="index.html">cheatysheets</a>
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
 
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li> -->
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Blog Posts
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="spending-less-than-income.html">Spending < Income</a>
-          <a class="dropdown-item" href="goals.html">Goals</a>
-          <a class="dropdown-item" href="know-yourself">Know Yourself</a>
-          <a class="dropdown-item" href="#">Financial Toolbox</a>
-          <a class="dropdown-item" href="#">A Better Tomorrow</a>
-          <!-- <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li> -->
-    </ul>
-  </div>
-</nav>
-</nav>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
 
   <!-- Icons Grid -->
   <section class="features-icons bg-light text-center">
@@ -94,44 +84,6 @@
             <div class="goals">
               #goals
             </div>
-
-            <div class="row">
-              <div class="pad-r">
-                <div class="circle red">
-                    <p>career</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="pad-r">
-                <div class="circle red">
-                    <p>family</p>
-                </div>
-              </div>
-
-              <div class="pad-r">
-                <div class="circle">
-                    <p>$$</p>
-                </div>
-              </div>
-
-              <div class="pad-r">
-                <div class="circle red">
-                    <p>retirement</p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="pad-r">
-                <div class="circle red">
-                    <p>other</p>
-                </div>
-              </div>
-            </div>
-
         </div>
 
 
@@ -149,22 +101,22 @@
 
         <!-- spending < income -->
         <!-- <a href="spending-less-than-income.html" -->
-        <div class="col-lg-6 align-self-center red">
+        <div class="col-lg-6 align-self-center light-blue">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="row justify-content-center">
               <div class="writing-icon">
-                <p class="large-font">spending</p>
-                <p class="large-font">$</p>
+                <p class="large-white-font">spending</p>
+                <p class="large-white-font">$</p>
               </div>
               <div class="writing-icon">
-                <p class="large-font"><<p>
+                <p class="large-white-font"><<p>
               </div>
               <div class="writing-icon">
-                <p class="large-font">income</p>
-                <p class="large-font">$ $</p>
+                <p class="large-white-font">income</p>
+                <p class="large-white-font">$ $</p>
               </div>
 
-              <p>basic rule of paying yourself first</p>
+              <a class="brand" href="pay-yourself.html">pay yourself first</a>
             </div>
           </div>
         </div>
@@ -205,13 +157,16 @@
 
             <p>the right tools</p>
 
+
             <div class="row pad-b">
+
               <div class="pad-r">
                 <div class="circle-large red">
-                  <div class="extra-padding">
-                    <div class="line-h">
-                      <p class="bold">budgeting</p>
-                    </div>
+                  <div class="padding30">
+                      <a class="newsheet" href="budgeting.html">budgeting <i class="fas fa-angle-double-right"></i></a>
+
+                  </div>
+                  <div class="padding20">
                     <p>Mint</p>
                     <p>Excel</p>
                     <p>YNAB</p>
@@ -219,50 +174,55 @@
                 </div>
               </div>
 
-              <div class="circle-large grey">
-                <div class="extra-padding">
-                  <div class="line-h">
-                    <p class="bold">spending</p>
+              <div class="pad-r">
+                <div class="circle-large grey">
+                  <div class="padding30">
+                      <a class="newsheet" href="spending.html">spending <i class="fas fa-angle-double-right"></i></a>
                   </div>
-                  <p>cash</p>
-                  <p>debit</p>
-                  <p>credit</p>
+                  <div class="padding20">
+                    <p>cash</p>
+                    <p>debit</p>
+                    <p>credit</p>
+                  </div>
                 </div>
               </div>
+
             </div>
 
             <div class="row pad-b">
-              <div class="pad-r">
 
+              <div class="pad-r">
                 <div class="circle-large turq">
-                  <div class="extra-padding">
-                    <div class="line-h">
-                      <p class="bold">saving</p>
-                    </div>
+                  <div class="padding30">
+                      <a class="newsheet" href="saving.html">saving <i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                  <div class="padding20">
                     <p>HISA</p>
                     <p>GIC</p>
                     <p>ETF</p>
                   </div>
                 </div>
-
               </div>
 
+
+              <div class="pad-r">
                 <div class="circle-large light-blue">
-                  <div class="extra-padding">
-                    <div class="line-h">
-                      <p class="bold">sheltering</p>
-                    </div>
+                  <div class="padding30">
+                      <a class="newsheet" href="sheltering.html">sheltering <i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                  <div class="padding20">
                     <p>TFSA</p>
                     <p>RRSP</p>
                     <p>RESP</p>
                   </div>
                 </div>
+              </div>
 
 
               </div>
             </div>
 
-            <a href="tools.html">Read more</a>
+            <!-- <a href="tools.html">Read more</a> -->
 
 
         </div>

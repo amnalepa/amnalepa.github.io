@@ -3,13 +3,13 @@
 
 <head>
   <script data-ad-client="ca-pub-6469626425988510" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>financial cheatsheet</title>
+  <title>personal finance basics</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
   <!-- font for logo -->
   <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
 
   <!-- Custom fonts for this template -->
@@ -28,51 +29,37 @@
 
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
+  <link href="css/pie.css" rel="stylesheet">
 
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158093594-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158093594-1');
+  </script>
 </head>
 
 <body>
 
-  <!--navbar -->
-  <nav class="navbar navbar-light" style="background-color: #AECBC9;">
-  <nav class="navbar navbar-expand-lg">
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li> -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Blog Posts
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="spending-less-than-income.html">Spending < Income</a>
-          <a class="dropdown-item" href="goals.html">Goals</a>
-          <a class="dropdown-item" href="know-yourself">Know Yourself</a>
-          <a class="dropdown-item" href="#">Financial Toolbox</a>
-          <a class="dropdown-item" href="#">A Better Tomorrow</a>
-          <!-- <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a> -->
-        </div>
-      </li>
-      <li class="nav-item">
-        <img src="images/logo.png" href="#" width="80%" height="80%">
-        <!-- <a class="navbar-brand life" href="#">Life <br><span class="cheatsheets">Cheatsheets</span></a> -->
-        <!-- <a class="navbar-brand cheatsheets" href="#">Cheatsheets</a> -->
-      </li>
-
-    </ul>
-  </div>
-</nav>
-</nav>
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  </script>
+  <!--end of Navigation bar-->
 
 
 </body>
