@@ -6,7 +6,7 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="Getting an overview of personal finance basics shouldn't take ages. ">
   <meta name="author" content="">
 
   <title>personal finance basics</title>
@@ -67,25 +67,39 @@ $(function(){
       <div class="row">
 
         <!-- know yourself -->
-        <div class="col-lg-6">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+        <div class="col-lg-5">
+          <div class="card">
             <div class="know-yourself">
               know yourself
             </div>
-            <p>hobbies. lifestyle. habits. people.</p>
+            <p class="font-red">hobbies. lifestyle. habits. people.</p>
+            <!-- <p class="font-red">personal finance is <i>personal</i></p> -->
           </div>
         </div>
 
 
         <!-- goals -->
-        <div class="col-lg-6">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+        <div class="col-lg-5">
+          <div class="card">
 
             <div class="goals">
               #goals
             </div>
-        </div>
+            <div id="chart-legend">
+              <div id="part1" class="circle animate"></div>
+              <div id="part2" class="circle animate"></div>
+              <div id="part3" class="circle animate"></div>
+              <div id="part4" class="circle animate"></div>
+              <div id="part5" class="circle animate"></div>
+              <div id="part6" class="circle animate"></div>
 
+                <p id="pie1-label" class="pie1">professional development</p>
+                <p id="pie2-label" class="pie2">family / friends</p>
+                <p id="pie3-label" class="pie3">retirement / financial</p>
+                <p id="pie4-label" class="pie4">travel / hobbies</p>
+                <p id="pie5-label" class="pie5">health and exercise</p>
+                <p id="pie6-label" class="pie6">other</p>
+              </div>
 
       </div>
     </div>
@@ -101,45 +115,36 @@ $(function(){
 
         <!-- spending < income -->
         <!-- <a href="spending-less-than-income.html" -->
-        <div class="col-lg-6 align-self-center light-blue">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="row justify-content-center">
-              <div class="writing-icon">
-                <p class="large-white-font">spending</p>
-                <p class="large-white-font">$</p>
-              </div>
-              <div class="writing-icon">
-                <p class="large-white-font"><<p>
-              </div>
-              <div class="writing-icon">
-                <p class="large-white-font">income</p>
-                <p class="large-white-font">$ $</p>
-              </div>
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="light-blue">
+              <div class="row justify-content-center">
+                <div class="writing-icon">
+                  <p class="large-white-font">spending</p>
+                  <p class="large-white-font">$</p>
+                </div>
+                <div class="writing-icon">
+                  <p class="large-white-font"><<p>
+                </div>
+                <div class="writing-icon">
+                  <p class="large-white-font">income</p>
+                  <p class="large-white-font">$ $</p>
+                </div>
 
-              <a class="brand" href="pay-yourself.html">pay yourself first</a>
+                <a class="brand" href="pay-yourself.html">pay yourself first</a>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- temp -->
-        <div class="col-lg-6">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+        <div class="col-lg-5">
+          <div class="card">
             <div>
-              <section class="grey">
-                <p class="font-white">grey 5</p>
-              </section>
-              <section class="light-blue">
-                <p class="font-white">light blue</p>
-              </section>
-              <section class="dark-blue">
-                <p class="font-white">blue</p>
-              </section>
               <section class="turq">
-                <p class="font-white">turq</p>
+                <p class="font-white">temp</p>
               </section>
-              <section class="red">
-                <p class="font-white">red</p>
-              </section>
+
             </div>
           </div>
         </div>
@@ -148,28 +153,30 @@ $(function(){
     </div>
   </section>
 
-  <section class="features-icons bg-light text-center">
+  <section class="bg-light text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+        <div class="col-lg-5">
+          <div class="card">
 
-
+            <div class="card-header">
             <p>the right tools</p>
+          </div>
 
 
+          <div class="card-body pad-l">
             <div class="row pad-b">
 
               <div class="pad-r">
                 <div class="circle-large red">
                   <div class="padding30">
-                      <a class="newsheet" href="budgeting.html">budgeting <i class="fas fa-angle-double-right"></i></a>
+                      <a class="font-white-link" href="budgeting.html">budgeting <i class="fas fa-angle-double-right"></i></a>
 
                   </div>
                   <div class="padding20">
                     <p>Mint</p>
-                    <p>Excel</p>
                     <p>YNAB</p>
+                    <p>spreadsheets</p>
                   </div>
                 </div>
               </div>
@@ -177,7 +184,7 @@ $(function(){
               <div class="pad-r">
                 <div class="circle-large grey">
                   <div class="padding30">
-                      <a class="newsheet" href="spending.html">spending <i class="fas fa-angle-double-right"></i></a>
+                      <a class="font-white-link" href="spending.html">spending <i class="fas fa-angle-double-right"></i></a>
                   </div>
                   <div class="padding20">
                     <p>cash</p>
@@ -194,7 +201,7 @@ $(function(){
               <div class="pad-r">
                 <div class="circle-large turq">
                   <div class="padding30">
-                      <a class="newsheet" href="saving.html">saving <i class="fas fa-angle-double-right"></i></a>
+                      <a class="font-white-link" href="saving.html">saving <i class="fas fa-angle-double-right"></i></a>
                   </div>
                   <div class="padding20">
                     <p>HISA</p>
@@ -208,7 +215,7 @@ $(function(){
               <div class="pad-r">
                 <div class="circle-large light-blue">
                   <div class="padding30">
-                      <a class="newsheet" href="sheltering.html">sheltering <i class="fas fa-angle-double-right"></i></a>
+                      <a class="font-white-link" href="sheltering.html">sheltering <i class="fas fa-angle-double-right"></i></a>
                   </div>
                   <div class="padding20">
                     <p>TFSA</p>
@@ -217,6 +224,8 @@ $(function(){
                   </div>
                 </div>
               </div>
+
+            </div>
 
 
               </div>
@@ -227,8 +236,8 @@ $(function(){
 
         </div>
 
-        <div class="col-lg-6">
-        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+        <div class="col-lg-5">
+        <div class="card">
 
             <p>couch potato index investing</p>
             <i class="fas fa-chart-line"></i>

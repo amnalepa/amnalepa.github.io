@@ -1,0 +1,100 @@
+#chart-legend {
+position: relative;
+width: 300px;
+height: 300px;
+margin: 30px auto;
+line-height: 3px;
+padding-left: 60px;
+}
+.circle {
+width: 60%;
+height: 60%;
+border-radius: 50%;
+position: absolute;
+}
+.animate {
+-webkit-transition: 0.2s cubic-bezier(.74,1.13,.83,1.2);
+-moz-transition: 0.2s cubic-bezier(.74,1.13,.83,1.2);
+-o-transition: 0.2s cubic-bezier(.74,1.13,.83,1.2);
+transition: 0.2s cubic-bezier(.74,1.13,.83,1.2);
+}
+.animate:hover {
+transform: scale(1.1);
+transform-origin: center center;
+}
+#part1 {
+background-color: #F8B195;
+-webkit-clip-path: polygon(50% 0, 50% 50%, 100% 30%, 100% 0);
+clip-path: polygon(50% 0, 50% 50%, 100% 30%, 100% 0);
+}
+#part2 {
+background-color: #F67280;
+-webkit-clip-path: polygon(50% 50%, 100% 30%, 100% 100%, 120% 100%);
+clip-path: polygon(50% 50%, 100% 30%, 100% 100%, 120% 100%);
+}
+#part3 {
+background-color: #C06C84;
+-webkit-clip-path: polygon(50% 50%, 120% 100%, 50% 100%);
+clip-path: polygon(50% 50%, 120% 100%, 50% 100%);
+}
+#part4 {
+background-color: #6C5B7B;
+-webkit-clip-path: polygon(50% 50%, 0 10000%, 0% 90%);
+clip-path: polygon(50% 50%, 0 10000%, 0% 90%);
+}
+#part5 {
+background-color: #355C7D;
+-webkit-clip-path: polygon(50% 50%, 0 90%, 0 30%);
+clip-path: polygon(50% 50%, 0 90%, 0 30%);
+}
+#part6 {
+background-color: #83AF9B ;
+-webkit-clip-path: polygon(50% 50%, 0 30%, 0 0, 50% 0);
+clip-path: polygon(50% 50%, 0 30%, 0 0, 50% 0);
+}
+
+.pie1 {
+  color: #F8B195;
+  padding-top: 200px;
+}
+.pie2 {
+  color: #F67280;
+}
+.pie3 {
+  color: #C06C84;
+}
+.pie4 {
+  color: #6C5B7B;
+}
+.pie5 {
+  color: #355C7D;
+}
+.pie6 {
+  color: #83AF9B;
+}
+
+
+#part1:hover ~ #pie1-label {
+  font-size: 1.3rem;
+  font-weight: 400 !important;
+}
+#part2:hover ~ #pie2-label {
+  font-size: 1.3rem;
+  font-weight: 400 !important;
+}
+#part3:hover ~ #pie3-label {
+  font-size: 1.3rem;
+  font-weight: 400 !important;
+}
+#part4:hover ~ #pie4-label {
+  font-size: 1.3rem;
+  font-weight: 400 !important;
+}
+#part5:hover ~ #pie5-label {
+  font-size: 1.3rem;
+  font-weight: 400 !important;
+}
+#part6:hover ~ #pie6-label {
+  font-size: 1.3rem;
+  font-weight: 400 !important;
+}

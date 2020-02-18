@@ -53,18 +53,39 @@ h3,
 h4,
 h5,
 
-.p, p {
+
+.p, p, .font-white, .large-font, .large-white-font, .font-white-link, .red-font {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 1.25rem;
 }
 
-.newsheet {
-  font-weight: 300;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
+.font-white-link {
+  font-weight: 300 !important;
   color: #FFFFFF;
   /* text-decoration: underline; */
+}
+
+.large-font {
+  font-size: 1.75rem;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.large-white-font {
+  font-size: 1.5rem !important;
+  font-weight: 300 !important;
+  color: #FFFFFF;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  padding-left: 40px;
 }
 
 
@@ -84,6 +105,10 @@ span {
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.padding20all {
+  padding: 20px;
+}
+
 .cheatsheets {
   font-family: 'Bad Script', cursive;
 }
@@ -96,12 +121,6 @@ span {
   border-radius: 20% !important;
 }
 
-.large-white-font {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-  color: #FFFFFF;
-}
 
 .brand {
   font-family: 'Open Sans', sans-serif;
@@ -132,6 +151,10 @@ span {
   padding-right:10px;
 }
 
+.pad-l {
+  padding-left:30px;
+}
+
 .padding30 {
   padding-top:30px;
 }
@@ -157,7 +180,7 @@ span {
 }
 
 .goals {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Dancing Script',cursive;
 }
 
@@ -204,21 +227,6 @@ span {
 
 .grey {
   background-color: #57575F;
-}
-
-.large-font {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-.font-white {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: #ffffff;
 }
 
 .white {
