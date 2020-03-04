@@ -11,10 +11,11 @@ body {
 h1, .h1 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  /* color: #ffffff; */
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 2rem;
+  justify-content: center;
 }
 
 h2, h3, h4, h5, h6,
@@ -22,7 +23,7 @@ h2, h3, h4, h5, h6,
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  color: #ffffff;
+  /* color: #ffffff; */
   font-weight: 200;
   line-height: 1.2;
 }
@@ -81,11 +82,8 @@ h5,
 }
 
 ul {
-  padding-left: 20px;
-}
-
-li {
-  padding-left: 40px;
+  /* padding-left: 20px; */
+  font-color: #14ae55 ;
 }
 
 
@@ -93,12 +91,8 @@ span {
   line-height: -10px;
 }
 
-.navbar-brand {
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
-  font-family: 'Open Sans', sans-serif;
-  color: #57575F;
+.circle-bullet {
+  list-style-type: circle;
 }
 
 .life {
@@ -109,6 +103,9 @@ span {
   padding: 20px;
 }
 
+.padding-icon {
+  padding: 12px;
+}
 .cheatsheets {
   font-family: 'Bad Script', cursive;
 }
@@ -128,19 +125,24 @@ span {
   font-style: italic;
 }
 
-.circle {
-  height: 100px;
-  width: 100px;
+.circle-small, .circle-large {
   border-radius: 50%;
-  line-height: 100px;
+  line-height: 5px;
+  color: white;
+}
+
+.circle-small {
+  height: 60px;
+  width: 60px;
 }
 
 .circle-large {
   height: 155px;
   width: 155px;
-  border-radius: 50%;
-  line-height: 5px;
-  color: white;
+}
+
+.icon-in-circle {
+  font-size: 2rem;
 }
 
 .pad-b {
@@ -148,7 +150,7 @@ span {
 }
 
 .pad-r {
-  padding-right:10px;
+  padding-right:30px;
 }
 
 .pad-l {
@@ -197,6 +199,22 @@ span {
   background-color: #CA2542;
 }
 
+.green {
+  background-color: #83AF9B;
+}
+
+.peach {
+  background-color: #F8B195;
+}
+
+.font-peach {
+  color: #F8B195;
+}
+
+.font-green {
+  color:  #83AF9B;
+}
+
 .font-dark-blue {
   color: #276478;
 }
@@ -235,6 +253,16 @@ span {
 
 .chart-size {
   font-size: 100px;
+}
+
+.center-vertically {
+  align-items: center;
+}
+
+.right-border {
+  border-right-color: grey;
+  border-right-style: solid;
+  border-right-width: 0.2px;
 }
 
 a:hover {

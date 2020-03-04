@@ -28,8 +28,7 @@
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/landing-page.min.css" rel="stylesheet">
-  <link href="css/pie.css" rel="stylesheet">
+  <link href="css/blogpost.min.css" rel="stylesheet">
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
@@ -51,42 +50,39 @@
 
 <body>
 
-  <!--navbar -->
-  <nav class="navbar navbar-light turq sticky-top">
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="index.html">cheatysheets</a>
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
 
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<div class="blog-post">
+<div class="card padding20all">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li> -->
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
+<div class="card-body">
+<h1>Budgeting Tools</h1>
 
-
-
-    </ul>
-  </div>
-</nav>
-</nav>
-
-<div class="padding20all">
-<div class="dark-blue padding20all col-9 font-white card form-inline">
-<p>Budgeting Tools</p>
 <p>the key is to find one that works for <i>you</i></p>
-</div>
-</div>
 
-<div class="padding20all">
-<div class="grey padding20all col-9 font-white card">
-<ul><a class="font-white-link" target="_blank" href="https://www.mint.com">Mint<a/></ul>
+
+
+  <h2><a class="font-white-link" target="_blank" href="https://www.mint.com">Mint</a></h2>
+<ul>
+  <li>free!</li>
+  <li>connects to all your bank accounts and all your transactions are synced automatically</li>
+  <li>gives an overview of debts, assets, net worth and goals all on the home page</li>
+  <li>view all transactions in one place and input cash transactions to be even more accurate</li>
+  <li>create budgets to track in real time and see if you’re over budget</li>
+  <li>set financial goals and Mint helps make them smart goals by making you think through how much you’ll need to save each month to achieve the goal</li>
+  <li>started with Mint because I've personally used it and found it useful</li>
+</ul>
+
+<h2><a class="font-white-link" target="_blank" href="https://www.youneedabudget.com">YNAB</a></h2>
+<ul>
 <li>free!</li>
 <li>connects to all your bank accounts and all your transactions are synced automatically</li>
 <li>gives an overview of debts, assets, net worth and goals all on the home page</li>
@@ -94,42 +90,29 @@
 <li>create budgets to track in real time and see if you’re over budget</li>
 <li>set financial goals and Mint helps make them smart goals by making you think through how much you’ll need to save each month to achieve the goal</li>
 <li>started with Mint because I've personally used it and found it useful</li>
-</div>
-</div>
+</ul>
 
-<div class="padding20all">
-  <div class="light-blue padding20all col-9 font-white card">
-<ul><a class="font-white-link" target="_blank" href="https://www.youneedabudget.com">YNAB<a/></ul>
-<li>monthly cost</li>
-<li>intended for transactions to be manually exported from bank accounts and uploaded</li>
-<li>takes the stance of giving every dollar a job</li>
-<li>support account syncing and importing now but it's not as nice as Mint</li>
-<li>lots of free content: podcasts, videos, docs, live classes</li>
-<li>primarily meant for budgeting; doesn’t give an overview of financial situation</li>
-<li>internet people swear by it; I may have to try it someday</li>
-</div>
-</div>
+<h2>Mint & YNAB</h2>
+<ul>
+  <li>show you your net worth over time</li>
+  <li>show you insights about your spending</li>
+  <li>transaction splitting</li>
+  <li>works across devices</li>
+</ul>
 
 
-<div class="padding20all">
-  <div class="red padding20all col-9 font-white card">
-<ul>Mint & YNAB</ul>
-<li>show you your net worth over time</li>
-<li>show you insights about your spending</li>
-<li>transaction splitting</li>
-<li>works across devices</li>
-</div>
-</div>
+<h2>Spreadsheets</h2>
+<ul>
+  <li>why not go old school?</li>
+  <li>highly customizable, can do whatever works for you</li>
+  <li>allows you to keep your data to yourself</li>
+  <li>not as easy to use on mobile devices</li>
+  <li>using this method currently because of the customization allowing me to track my TFSA contributions and my benefit usage</li>
+</ul>
 
 
-<div class="padding20all">
-  <div class="turq padding20all col-9 font-white card">
-<ul>Spreadsheets</ul>
-<li>why not go old school?</li>
-<li>highly customizable, can do whatever works for you</li>
-<li>allows you to keep your data to yourself</li>
-<li>not as easy to use on mobile devices</li>
-<li>using this method currently because of the customization allowing me to track my TFSA contributions and my benefit usage</li>
+</div>
+
 </div>
 </div>
 
