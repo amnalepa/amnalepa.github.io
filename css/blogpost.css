@@ -21,7 +21,7 @@ h1, h2 {
 ul,p {
   font-size: 20px;
   /* line-height: 30px; */
-  font-family: "Source Sans Pro","SF UI Text","San Francisco",-apple-system,BlinkMacSystemFont,sans-serif;
+  /* font-family: "Source Sans Pro","SF UI Text","San Francisco",-apple-system,BlinkMacSystemFont,sans-serif; */
 }
 
 i {
