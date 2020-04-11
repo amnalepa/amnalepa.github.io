@@ -55,7 +55,7 @@ h4,
 h5,
 
 
-.p, p, .font-white, .large-font, .large-white-font, .font-white-link, .red-font {
+.p, p, .font-white, .large-font, .large-white-font, .font-white-link, .red-font, .font-grey-link {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 1.25rem;
