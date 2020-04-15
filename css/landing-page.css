@@ -61,10 +61,22 @@ h5,
   font-size: 1.25rem;
 }
 
+a,a:link,a:visited,a:hover {
+  color: #88dddd;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .font-white-link {
   font-weight: 300 !important;
   color: #FFFFFF;
   /* text-decoration: underline; */
+}
+
+.font-grey-link{
+  color: #838383
 }
 
 .large-font {
@@ -265,9 +277,9 @@ span {
   border-right-width: 0.2px;
 }
 
-a:hover {
+/* a:hover {
   color: grey;
-}
+} */
 
 
 header.masthead {

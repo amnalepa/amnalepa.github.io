@@ -3,6 +3,14 @@ h1, h2 {
   padding-bottom: 10px;
 }
 
+a,a:link,a:visited,a:hover {
+  color: #88dddd;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 .blog-post {
   padding-left: 50px;
