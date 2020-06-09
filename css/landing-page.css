@@ -54,6 +54,10 @@ h3,
 h4,
 h5,
 
+.site-intro {
+  justify-content: center;
+}
+
 
 .p, p, .font-white, .large-font, .large-white-font, .font-white-link, .red-font, .font-grey-link {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -68,6 +72,8 @@ h5,
 a:hover {
   text-decoration: underline;
 } */
+
+
 
 .font-white-link {
   font-weight: 300 !important;
@@ -118,7 +124,7 @@ span {
   padding: 12px;
 }
 .cheatsheets {
-  font-family: 'Bad Script', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .rounded-img {
