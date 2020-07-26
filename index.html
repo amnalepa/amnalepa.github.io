@@ -6,10 +6,11 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Getting an overview of personal finance basics shouldn't take ages. ">
+  <meta name="description" content="Getting an overview of personal finance basics shouldn't take ages. Maybe a cheatsheet can help!">
   <meta name="author" content="">
+  <meta name="keywords" content="personal finance, canada, basics, overview" />
 
-  <title>personal finance basics</title>
+  <title>personal finance cheatsheet</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +31,10 @@
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
   <link href="css/pie.css" rel="stylesheet">
+
+  <!-- tab image -->
+  <link rel="icon" ref="images/logo.ico">
+
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
@@ -71,15 +76,15 @@
     <!-- Cheatsheet cards -->
     <div class="container">
       <div class="row">
+        <div class="col-lg-12">
         <div class="card">
           <div class="card-body">
-            <div>interested in learning personal finance.. without reading lengthy blogposts?</div>
-            <div>this site is desinged like a
-              <div class="cheatsheets">cheatsheet</div>
-              <div>, to help you learn the basics quickly</div>
+            <div>interested in learning personal finance.. without reading lengthy blogposts?<br>
+            this site is desinged like a cheatsheet, to help you learn the basics, with a focus on the personal<br>
+              <!-- people always talk about the money aspect, but what about the personal? -->
             </div>
           </div>
-
+        </div>
         </div>
         </div>
       </div>
@@ -352,11 +357,12 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="email">
+                <input id="emailInput" type="email" class="form-control form-control-lg" placeholder="email">
               </div>
               <div class="col-12 col-md-3">
-                <button type="submit" class="btn-lg btn-primary">yes please!</button>
+                <button id="submitButton" type="submit" class="btn-lg btn-primary">yes please!</button>
               </div>
+
             </div>
           </form>
         </div>
