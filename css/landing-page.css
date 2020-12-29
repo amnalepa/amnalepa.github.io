@@ -120,12 +120,8 @@ span {
   padding: 12px;
 }
 
-.rounded-img {
-  border-radius: 50% !important;
-}
-
-.rounded-img-20 {
-  border-radius: 20% !important;
+.rounded-img-10 {
+  border-radius: 10px;
 }
 
 
