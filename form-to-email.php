@@ -1,7 +1,7 @@
 <?php
-$gmail_username = '';
-$gmail_password = '';
-$gmail_name = '';
+$gmail_username = 'add_email_here';
+$gmail_password = 'add_password_here';
+$gmail_name = 'add_name_here';
 
 //Import PHPMailer classes into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
@@ -26,12 +26,16 @@ require("PHPMailer-master/src/Exception.php");
    echo "error; you need to submit the form";
  }
  $email = $_POST['email'];
-//
-//  if(empty($email)) {
-//    echo "Email is madatory";
-//    exit;
-//  }
 
+ $handler = fopen('email_list.txt','a');
+ if(fwrite($handler,$email.",")){
+   echo "Email saved successfully";
+ }
+
+ if(empty($email)) {
+   echo "Email is madatory";
+   exit;
+ }
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
