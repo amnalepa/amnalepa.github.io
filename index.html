@@ -16,12 +16,12 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet"> -->
   <!-- font for logo -->
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
 
 
   <!-- Custom fonts for this template -->
@@ -121,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- <p class="font-red">personality. priorities. hobbies. lifestyle. habits. beliefs. values. relationships.</p> -->
             <br>
             <div class="card-body">
-              <img src="images/know-yourself.png" width=360 height=335><br>
+              <img src="images/know-yourself.png" width=360 height=335 max-width=100%><br>
               <a class="font-grey-link" href="posts/its-personal.html">personal finance is <i>personal</i> <i class="fas fa-angle-double-right"></i></a>
             </div>
 
@@ -364,23 +364,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Call to Action -->
   <section class="call-to-action text-white text-center">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h3 class="mb-4">Want to know when I've released a new cheatsheet?</h3>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form action="http://localhost:8888/cheatsheet-site/form-to-email.php" method="post">
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input id="email" name = "email" type="email" class="form-control form-control-lg" placeholder="email">
-              </div>
-              <!-- <input type="submit"> -->
-              <div class="col-12 col-md-3">
-                <button id="submit" name="submit" type="submit" class="btn-lg btn-primary">yes please!</button>
-              </div>
 
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form class="gform pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbxq8qdoRViflShoXB6TvSB5VsyFQN11Pbjubu-ng8GTfI7NyJNrFh7QpSsO7BBnhlMO/exec" method="post" data-email="annamariqua@gmail.com">
+            <div class="row">
+              <div class="col-xl-9 mx-auto">
+                <h3 class="mb-4">Want to know when I've released a new cheatsheet?</h3>
+              </div>
+            </div>
+            <div class="form-elements">
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                   <fieldset class="pure-group">
+                     <input id="email" name = "email" type="email" class="form-control form-control-lg" placeholder="email">
+                   </fieldset>
+                </div>
+                <!-- <input type="submit"> -->
+                <div class="col-12 col-md-3">
+                  <button id="submit" name="submit" type="submit" class="btn-lg btn-primary">yes please!</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display:none" >
+              <h2><em>Thanks</em> for contacting us!
+                We will get back to you soon!</h2>
             </div>
           </form>
+          <!-- Submit the Form to Google Using "AJAX" -->
+          <script data-cfasync="false" src="form-submission-handler.js"></script>
+
+
         </div>
       </div>
     </div>
@@ -435,5 +450,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
 </body>
+
+<style>
+/* vietnamese */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Rep6hNX6plRPjLo.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3ROp6hNX6plRPjLo.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup6hNX6plRP.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
 
 </html>
